@@ -1,0 +1,11 @@
+{
+  "name": "codec",
+  "version": "0.0.1",
+  "description": "A simple codec including a set of encoding & decoding modules.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Hungrated",
+  "license": "MIT"
+}
