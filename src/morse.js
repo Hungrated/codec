@@ -1,4 +1,4 @@
-function encode (str) {
+function encode (_str) {
   const alphabet = {
     'a': '.-',
     'b': '-...',
@@ -55,7 +55,8 @@ function encode (str) {
     '$and': '.-...',
     '$at': '.--.-.'
   };
-  const temp = str.toLowerCase().trim().replace(/\n/g, ' ');
+  const temp = _str.toLowerCase().trim().replace(/\n/g, ' ');
+  const separator = ' ';
   let encodedString = '';
   for (let i = 0; i < temp.length; i++) {
     let charFlag = '';
@@ -125,9 +126,18 @@ function encode (str) {
           return 'encode error: unknown character';
         }
     }
-    encodedString += alphabet[charFlag];
+    encodedString += `${alphabet[charFlag]}${separator}`;
   }
-  console.log(encodedString);
-  return encodedString;
+  console.log(encodedString.slice(0, -1));
+  return encodedString.slice(0, -1);
 }
 
+function decode(_str) {
+  const matchingTree = [
+    '',
+    't', 'e',
+
+  ];
+}
+
+encode('tattoo tattoo');
