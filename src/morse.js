@@ -136,7 +136,10 @@ function decode(_str) {
   const matchingTree = [
     '',
     't', 'e',
-
+    'm', 'n', 'a', 'i',
+    'o', 'g', 'k', 'd', 'w', 'r', 'u', 's',
+    '', '', 'q', 'z', 'y', 'c', 'x', 'b', 'j', 'p', '', 'l', '', '', 'v', 'h',
+    ''
   ];
 }
 
